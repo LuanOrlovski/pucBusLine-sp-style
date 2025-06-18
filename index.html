@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RotaFácil</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo RotaFácil" loading="lazy" />
+                <h1>RotaFácil</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#rotas">Rotas Paiol</a></li>
+                    <li><a href="#rotas-puc">Rotas PUC</a></li>
+                </ul>
+            </nav>
+            <button id="toggle-dark" title="Alternar modo noturno">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="pagina">
+        <h2>Bem-vindo ao RotaFácil</h2>
+        <div class="imagem-container">
+            <img src="img/tubo-paiol.jpg" alt="Estação Paiol" loading="lazy" class="destaque" />
+            <img src="img/PUC.PNG" alt="Estação PUC" loading="lazy" class="destaque" />
+        </div>
+        <p>Estações tubo Paiol e PUC</p>
+        </section>
+
+        <section id="sobre" class="pagina">
+            
+            <h2>Projeto RotaFácil</h2>
+
+            <p>Este projeto foi criado para facilitar o acesso às informações das linhas-tubo de Curitiba, especialmente para quem depende do transporte público todos os dias. </p>
+
+            <p>Atualmente o site conta com as rotas dos 2 tubos mais próximos a PUC-PR, ajudando moradores e estudantes a consultar horários e trajetos com rapidez.</p> 
+            
+            <p>A proposta do RotaFácil é oferecer uma maneira fácil e intuitiva de saber qual linha pegar, quando e onde.</p>
+
+            <p>Com um layout simples e moderno, o site se destaca entre outras plataformas, tornando a experiência mais prática para quem só quer chegar no destino sem dor de cabeça.</p>
+
+            <div class="ilustracao-sobre">
+                <img src="img/art.png" alt="Ilustração Tubo Paiol" loading="lazy">
+            </div>
+        </section>
+
+        <section id="rotas" class="pagina">
+            <div id="resultado-paiol"></div>
+        </section>
+
+        <section id="rotas-puc" class="pagina">
+            <div id="resultado-puc"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 Projeto RotaFácil. BCC PUC-PR</p>
+    </footer>
+
+    <button id="topo" title="Voltar ao topo">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
